@@ -6,5 +6,9 @@
   <input type="submit" value="Submit">
 </form>
 <div style='border: 200px dashed red'>
-  <img src='https://m.media-amazon.com/images/I/51KNy3fAsgL._AC_.jpg'>
+  <% if @cat_name == "Angry" %>
+    <img src='https://www.gannett-cdn.com/-mm-/dcd88fe5876fd549823feb35af14c0ae9f0885b6/c=0-25-492-303/local/-/media/Phoenix/None/2014/10/17/635491415661570024-garfi8.PNG?width=492&height=277&fit=crop&format=pjpg&auto=webp'>
+  <% else %>
+    <img src='https://m.media-amazon.com/images/I/51KNy3fAsgL._AC_.jpg'>
+  <% end %>
 </div>
